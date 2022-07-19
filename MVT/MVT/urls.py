@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from App_Familia.views import familiares, lista_familiares
+from App_Familia.views import familiares, lista_familiares, inicio
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', inicio),
     path('agregar-familiar/<nombre>/<parentezco>/<edad>/<nacimiento>/', familiares),
     path('lista_familiares/', lista_familiares),
 ]

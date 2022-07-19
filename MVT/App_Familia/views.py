@@ -20,3 +20,7 @@ def lista_familiares(self):
     lista=Miembro.objects.all()
 
     return render(self, "template1.html", {"lista_familiares": lista})
+
+def inicio(self):
+
+    return render(self, "template2.html")
