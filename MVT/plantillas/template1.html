@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" style="background-color: rgb(19, 145, 134) ;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Familiares</title>
+</head>
+<body>
+
+    <h1 style="background-color: rgb(67, 81, 128);">Mi familia</h1>
+    <h3>Algunos miembros de mi familia son:</h3>
+    <ul>
+    {% for familiar in lista_familiares %}
+        <li>Mi {{familiar.parentezco}} se llama {{familiar.nombre}} y tiene {{familiar.edad}} años. Nació en {{familiar.nacimiento}}</li>
+            {% endfor %}
+    </ul>
+    <br>
+    <h3>Frase del día:</h3>
+    <h2 style="background-color: rgb(67, 81, 128);">"De la familia se aprende a cuidar del otro, del bien del otro, <br>
+    a amar la armonía de la creación y a disfrutar y compartir sus frutos, <br>
+    favoreciendo un consumo racional, equilibrado y sostenible"</h2>
+
+</body>
+<footer>Hecho en Python y Django</footer>
+</html>
